@@ -1,7 +1,7 @@
 /*
 Since Big-O notation is a mathematical algorithm, it is difficult to apply it to character directly. So I would suggest converting the character to uppercase and ASCII code before processing, and then sorting from small to large, and two sets of array also need to be processed, and then Big-O notation is processed.
 
-In this case I suggest to use O(log n) processing, because now only single letter case is very easy to compare is the median large or small, effectively reducing the number of runs.
+In this case I suggest to use O(log n) processing, because now only single letter case is high performance to compare is the median large or small, effectively reducing the number of runs.
 */
 
 function isSubset(arr1, arr2){
