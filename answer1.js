@@ -11,6 +11,7 @@ function isSubset(arr1, arr2){
 	
 	let subSet=0;
 	for (i = 0; i < arr2.length; i++) {   
+		//Use O(log n) check each value in array2
 		if(BigO(arr1, arr2[i])<0){
 			return false;
 		}
@@ -18,6 +19,7 @@ function isSubset(arr1, arr2){
 	return true;
 }
 function BigO(array, key){
+//O(log n) processing
     let min = 0 ;
     let max = array.length -1;
     while(min <= max){
@@ -36,10 +38,14 @@ function BigO(array, key){
 function sort(array){
 	for (i = 0; i < array.length; i++) {   
 		let chartext=array[i];
-		chartext=chartext.toUpperCase();
+		// Change the character to uppercase
+		chartext=chartext.toUpperCase(); 
+		// Change the character to ASCII code
 		chartext=chartext.charCodeAt();
+		// Add back to the array
 		array[i]=chartext;
 	}
+	// Use the ASCII array to sort from small to large
 	array.sort();
 	return array;
 }
